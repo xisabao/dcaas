@@ -2,8 +2,8 @@
 
 ## Abstract
 
-This application is intended to replace the antiquated methods of diary data collection by 
-replacing it with a fast, secure, intuative system that provides the following services:
+This application is intended to replace the antiquated methods of diary data collection by
+replacing it with a fast, secure, intuitive system that provides the following services:
 
 1. Easy, powerful drag-and-drop tool to create user-friendly surveys
 2. Secure, provably anonymous data collection via the surveys
