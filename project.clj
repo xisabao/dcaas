@@ -11,6 +11,7 @@
                  [org.clojure/java.jdbc "0.6.1"]
                  [crypto-random "1.2.0"]
                  [crypto-equality "1.0.0"]
-                 [commons-codec "1.10"]]
+                 [commons-codec "1.10"]
+                 [org.clojure/core.match "0.3.0-alpha4"]]
   :git-dependencies [["https://github.com/jakespringer/Korma.git"]]
   :source-paths [".lein-git-deps/Korma/src"])
