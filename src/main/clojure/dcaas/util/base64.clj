@@ -80,4 +80,4 @@
   "Decode Base64 String to UTF-8 representation."
   [string]
   (let [octets (sextets->octets (map base64-char->int string))]
-    (.getBytes (apply str (map char octets)))))
+(.getBytes (apply str (map char octets)))))
