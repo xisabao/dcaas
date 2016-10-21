@@ -1,0 +1,25 @@
+body {
+	overflow-x: hidden;
+}
+
+.row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.linear-scale-label {
+	margin-right: 20px;
+}
+.linear-scale-radio-wrapper {
+	display: inline-block;
+	margin-right: 15px;
+}
+.mc-grid {
+	height: 25px;
+	width: 50px;
+	padding: 10px;
+}
+
+.slider-amount {
+	border:0;
+	font-weight: bold;
+}
