@@ -36,4 +36,4 @@
                       salt-beta)
         password-hash (salt-and-hash password salt-alpha#)]
     (do
-      (sql/connect-mariadb! )))
+      (sql/connect-mariadb!))))
