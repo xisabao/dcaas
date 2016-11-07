@@ -13,10 +13,13 @@
                  [crypto-equality "1.0.0"]
                  [commons-codec "1.10"]
                  [org.clojure/core.match "0.3.0-alpha4"]
-                 [org.clojure/data.json "0.2.6"]]
+                 [org.clojure/data.json "0.2.6"]
+                 [ragtime "0.6.3"]]
   :git-dependencies [["https://github.com/jakespringer/Korma.git"]]
   :source-paths [".lein-git-deps/Korma/src"
                  "src/main/clojure"]
   :java-source-paths ["src/main/java"]
   :test-paths ["src/test/clojure"]
-  :resource-paths ["src/main/resource"])
+  :resource-paths ["src/main/resource"]
+  :aliases {"migrate" ["run" "-m" "dcaas.backend.create/migrate"]
+            "rollback" ["run" "-m" "dcaas.backend.create/rollback"]})

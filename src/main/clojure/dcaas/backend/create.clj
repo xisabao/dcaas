@@ -14,14 +14,14 @@
 (defentity researchers
   (pk :id)
   (table :researchers)
-  (entity-fields :username :email : password_hash :salt_alpha :salt_beta :role)
-  (has-many :surveys)
+  (entity-fields :username :email :password_hash :salt_alpha :salt_beta)
+  (has-many surveys)
 )
 
 (defentity users
   (pk :id)
   (table :users)
-  (entity-fields :username :email :password_hash :salt_alpha :salt_beta :role)
+  (entity-fields :username :email :password_hash :salt_alpha :salt_beta)
   (has-many responses)
   (many-to-many surveys :users_surveys)
   ;need to figure out how to do this
@@ -41,7 +41,7 @@
   (table :surveys)
   (entity-fields :name :description)
   (many-to-many users :users_surveys)
-  (belongs_to researchers)
+  (belongs-to researchers)
   (has-many questions)
   (has-many responses)
 )
@@ -49,8 +49,8 @@
 (defentity questions
   (pk :id)
   (table :questions)
-  (entity-fields :text :details :input_type :options)
-  (belongs_to surveys)
+  (entity-fields :question :details :input_type :options)
+  (belongs-to surveys)
   (has-many responses)
 )
 
